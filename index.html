@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Order List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PR 5 STAR HOTEL</h1>
+            <p>Create and manage hotel orders</p>
+        </header>
+        <form id="orderForm">
+            <div class="input-group">
+                <input type="text" id="guestName" placeholder="Guest Name" required>
+                <input type="text" id="roomType" placeholder="Room Type" required>
+            </div>
+            <div class="input-group">
+                <input type="date" id="checkInDate" required>
+                <input type="date" id="checkOutDate" required>
+            </div>
+            <textarea id="specialRequests" placeholder="Special Requests (optional)"></textarea>
+            <button type="submit" class="add">Add Order</button>
+        </form>
+        <div class="order-list">
+            <h2>Current Orders</h2>
+            <ul id="orderList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://res.cloudinary.com/dhlwzmkoz/image/upload/v1730102861/DALL_E_2024-10-28_13.34.16_-_A_luxurious_5-star_hotel_exterior_view_showcasing_elegant_architecture_with_a_grand_entrance_surrounded_by_beautifully_landscaped_gardens_palm_tree_fv3ooc.webp') no-repeat center center fixed; 
+    background-size: cover; /* Cover the entire background */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2d3748; /* Darker color for better contrast */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #4a5568; /* Dark gray for a softer look */
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #4A5568; /* Dark gray border */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+}
+
+input:focus, textarea:focus {
+    border-color: #63b3ed; /* Light blue on focus */
+    box-shadow: 0 0 5px rgba(99, 179, 237, 0.5); /* Light blue shadow on focus */
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    padding: 12px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.add {
+    background-color: #68d391; /* Green */
+    color: white;
+    border: 2px solid #4A5568; /* Dark gray border */
+}
+
+button.add:hover {
+    background-color: #48bb78; /* Darker green on hover */
+    border-color: #3f8e63; /* Slightly darker border */
+}
+
+.order-list {
+    margin-top: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+    color: #2d3748; /* Darker color for headings */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #cbd5e0; /* Light gray border */
+    border-radius: 5px;
+    margin-top: 10px;
+    background: #f7fafc;
+    transition: background 0.3s, box-shadow 0.3s; /* Add box-shadow transition */
+}
+
+li:hover {
+    background: #edf2f7; /* Light gray on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.order-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.delete {
+    background-color: #fc8181; /* Red */
+    color: white;
+    margin-left: 10px;
+}
+
+button.delete:hover {
+    background-color: #f56565; /* Darker red on hover */
+}
+
+@media (max-width: 600px) {
+    .input-group {
+        flex-direction: column;
+    }
+
+    input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
